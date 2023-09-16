@@ -1,0 +1,17 @@
+type Followed @entity(immutable: true) {
+  id: Bytes!
+  follower: Bytes! # address
+  followed: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Unfollowed @entity(immutable: true) {
+  id: Bytes!
+  follower: Bytes! # address
+  unfollowed: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
