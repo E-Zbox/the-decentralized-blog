@@ -12,5 +12,6 @@
 
 ## Authors
 
-[Ononogbu Ebenezer](https://x.com/ceoCodes)
-[Adeola Blessing](https://x.com/adeolRxxxx)
+-   [Ononogbu Ebenezer](https://x.com/ceoCodes)
+
+-   [Adeola Blessing](https://x.com/adeolRxxxx)
