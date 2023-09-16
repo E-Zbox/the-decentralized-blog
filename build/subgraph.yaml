@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: Follow
@@ -18,13 +18,13 @@ dataSources:
         - Unfollowed
       abis:
         - name: Follow
-          file: ./abis/Follow.json
+          file: Follow\abis\Follow.json
       eventHandlers:
         - event: Followed(address,address)
           handler: handleFollowed
         - event: Unfollowed(address,address)
           handler: handleUnfollowed
-      file: ./src/follow.ts
+      file: Follow\Follow.wasm
   - kind: ethereum
     name: Post
     network: sepolia
@@ -42,7 +42,7 @@ dataSources:
         - PostEdited
       abis:
         - name: Post
-          file: ./abis/Post.json
+          file: Post\abis\Post.json
       eventHandlers:
         - event: PostCreated(uint256,address,string,string)
           handler: handlePostCreated
@@ -50,7 +50,7 @@ dataSources:
           handler: handlePostDeleted
         - event: PostEdited(uint256,string,string)
           handler: handlePostEdited
-      file: ./src/post.ts
+      file: Post\Post.wasm
   - kind: ethereum
     name: UserProfile
     network: sepolia
@@ -67,10 +67,10 @@ dataSources:
         - UserUpdated
       abis:
         - name: UserProfile
-          file: ./abis/UserProfile.json
+          file: UserProfile\abis\UserProfile.json
       eventHandlers:
         - event: UserRegistered(address,string,string,string)
           handler: handleUserRegistered
         - event: UserUpdated(address,string,string,string)
           handler: handleUserUpdated
-      file: ./src/user-profile.ts
+      file: UserProfile\UserProfile.wasm

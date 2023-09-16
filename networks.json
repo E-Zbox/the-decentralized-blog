@@ -3,6 +3,12 @@
     "Follow": {
       "address": "0x1Ad28ab0d23951c01F087aB0373Df0dAf4113722",
       "startBlock": 4294530
+    },
+    "Post": {
+      "address": "0x2BC966a1cad7A3001b9dFf3B337258da935A903B"
+    },
+    "UserProfile": {
+      "address": "0xF8bDeCCc514AC57275a625Bcf3838EA46DE3D168"
     }
   }
 }
